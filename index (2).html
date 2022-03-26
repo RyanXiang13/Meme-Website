@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Verification</title>
+
+    <style>
+
+      body {
+    color:#fff;
+    background-image: url('https://i.imgflip.com/da5cr.jpg');
+      }
+
+      .names {
+        position: relative;
+        bottom: 20px;      
+      }
+
+      #donut2 {
+        position: relative;
+        left: 5px;
+      }
+
+      #donuts {
+        position: relative;
+        bottom: 15px;
+      }
+
+      #choices {
+        position: relative;
+        bottom: 15px;
+      }
+
+      #div1 {
+        text-align: center; 
+        color: white;     
+      }
+      
+      #header {
+        background-color: red;
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+<h1 id="header">VERIFICATION</h1>
+<hr>
+<div id="div1">
+<h4>What sport do you play?</h4>
+    <select name="sport" id="sports">
+  <option value="Select">Select</option>
+  <option value="Basketball">Basketball</option>
+  <option value="Baseball">Baseball</option>
+  <option value="Volleyball">Volleyball</option>
+  <option value="Swimming">Swimming</option>
+    </select>
+
+<h4>What age group are you?</h4>
+    <select name="age" id="ages">
+  <option value="Select">Select</option>
+  <option value="age1">5-12</option>
+  <option value="age2">12-18</option>
+  <option value="age3">18-30</option>
+  <option value="age4">30-51</option>
+  <option value="age5">>51</option>
+    </select>
+
+<h4>What is your last name?</h4>
+    <form>
+  <input type="text" class="names" name="lname">
+    </form> 
+
+<h4>What is your first name?</h4>
+    <form>
+  <input type="text" class="names" name="fname">
+    </form>
+
+<div id="donuts">
+<h4>Do you like donuts?</h4>
+    <form id="choices">
+  <label for="donut">Yes</label>
+  <input type="radio" id="donut1" name="donut" value="donut1"><br>
+  <label for="donut">No</label>
+  <input type="radio" id="donut2" name="donut" value="donut2">  
+    </form>
+</div>
+
+<form action="https://ok.ryanxiang.repl.co">
+  <input type="submit" value="I'm done">
+</form>
+</div>
+
+  </body>
+</html>

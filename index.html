@@ -1,141 +1,31 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Event invite</title>
-        <style>
+<head>
+<style>
 
-      body {
-        background-color: rgb(242, 245, 193);
-      }
+body {
+   color:#fff;
+    background-image: url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/09/27/21/trump-pepe.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    -webkit-animation: backgroundScroll 10s infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 1s infinite;
+    animation-fill-mode: forwards;
+    position: relative;
+    left: 30px;
+}
 
-      #info-sidebar {
-				font-size: 21px;  
-        color: red;
-			}
-			
-			.perks {
-				color: green;
-        font-size: 15px;
-			}
-			
-			#sidebar {
-				position: relative;
-        position: fixed;
-        margin-left: 91%;
-			}
-			
-      @keyframes title {
-        0% {color: red;}
-        20% {color: black;}
-        40% {color: green;}
-        60% {color: blue;}
-        80% {color: gray;}
-        100% {color: purple;}
-      }
+   @keyframes backgroundScroll {
+    0% {background-position: -0px 0;}
+    25% {background-position: -600px 0px;}
+      50% {background-position: -600px 0px;}
+        75% {background-position: -600px 0px;}
+          100% {background-position: -600px 0px;}
+}
 
-      #title {
-        animation-name: title;
-        animation-duration: 4.15s;
-        animation-iteration-count: infinite;
-        position: relative;
-        left: 30px;
-      }
-     
-      @keyframes subtitle {
-        0% {color: blue;}
-        20% {color: green;}
-        40% {color: black;}
-        60% {color: red;}
-        80% {color: purple;}
-        100% {color: gray;}
-      }
-
-      #subtitle {
-        animation-name: title;
-        animation-duration: 6s;
-        animation-iteration-count: infinite;
-        position: relative;
-        left: 30px;
-      }
-
-      #sidebar {
-        background-color: yellow;
-        animation-name: spin;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear; 
-        position: relative;
-        right: 50px;
-        width: 100px;
-        height: 80px;
-        padding-left: 15px;
-        padding-bottom: 15px;
-      }
-
-@keyframes spin {
-    0%   {
-        transform:rotate(0deg);
-        }
-    25%  {
-        transform:rotate(15deg);
-        }
-    50%  {
-        transform:rotate(0deg);
-        }
-    75%  {
-        transform:rotate(-15deg);
-        }
-    100%  {
-        transform:rotate(0deg);
-        }      
-      }
-			
-      .banquet {
-          border: 4.5px ridge blue;
-          margin: 6.5px;
-          position: relative;
-          left: 30px;
-          bottom: 95px
-      }
-
-      .banquet2 {
-          border: 4.5px ridge blue;
-          margin: 6.5px;
-          position: relative;
-          left: 30px;
-          bottom: 95px
-      }
-
-      #info-banquet {
-          font: 20px;
-          margin-left: 55%;
-          margin-top: -35%;
-      }
-
-      h4 {
-        position: relative;
-        bottom: 50px;
-        left: 30px;
-      }
-
-      #text {
-        position: relative;
-        margin: -290px 0 0 35px;
-      }
-
-      #subtitle {
-        position: relative;
-        left: 30px
-      }
-
-      #link1 {
-        color: green;
-      }
-
-      /* Add a black background color to the top navigation */
 .topnavigation {
-  background-color: black;
+  background-color: #333;
   overflow: hidden;
 }
 
@@ -161,53 +51,120 @@
   color: white;
 }
 
-        </style>
-    </head>
-    <body>
-        
-        <h1 id="title">MEME COLLAGE</h1>
-        <h2 id="subtitle">By yours truly</h2>
+  @keyframes name {
+     0% {color: red;}
+        20% {color: red;}
+        40% {color: green;}
+        60% {color: orange;}
+        80% {color: blue;}
+        100% {color: black;}
+  }
+  
+  #name {
+        animation-name: name;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
 
-        <div class="topnavigation">
-        <a class="" href="https://link.ryanxiang.repl.co">Home</a>
+  .headers {
+    font-size: 27px;
+    color: green;
+    font-style: italics;
+    font-family: fantasy;
+    font-weight: bold;
+  }
+
+@keyframes subtitle {
+        0% {color: blue;}
+        20% {color: green;}
+        40% {color: black;}
+        60% {color: red;}
+        80% {color: purple;}
+        100% {color: gray;}
+      }
+
+      #subtitle {
+        animation-name: title;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        font-size: 30px;
+        font-style: italic;
+      }
+
+@keyframes title {
+        0% {color: red;}
+        20% {color: black;}
+        40% {color: green;}
+        60% {color: blue;}
+        80% {color: gray;}
+        100% {color: purple;}
+      }
+
+      #title {
+        animation-name: title;
+        animation-duration: 4.15s;
+        animation-iteration-count: infinite;
+        font-size: 50px;
+        font-family: fantasy;
+      }
+
+#list1 {
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+ <h1 id="title">MEME COLLAGE</h1>
+ <h2 id="subtitle">By yours truly</h2>
+
+   <div class="topnavigation">
+        <a class="" href="www.google.com">Home</a>
         <a href="https://WeirdExtralargeBrowser.ryanxiang.repl.co">More memes</a>
-        <a href="https://Links-2.ryanxiang.repl.co">About me</a>
+        <a href="www.google.com">About me</a>
         <a href="www.google.com">Miscellaneous</a>
         <a href="https://ok2.ryanxiang.repl.co">Verify</a>
         </div>
-        
-        <div id="sidebar"><p id="info-sidebar">Bruh:</p>
-        <ul>
-            <li class="perks">Funny</li><br>
-			<li class="perks">Cool</li><br>
-			<li class="perks">Awesome</li><br>
-			<li class="perks">Plebico</li><br>
-      <li class="perks">PLEBICOS ARE AMAZING</li><br>
-        </ul>
-        </div>
-
-        <img src="https://static.mommypoppins.com/styles/image620x420/s3/school_meme_3_1.jpg?itok=zJWEcZFx" class="banquet" width="230px" height="150x">
-        <img src="https://media.sproutsocial.com/uploads/meme-example.jpg" class="banquet" width="230px" height="150x">
-        <img src="https://s.hdnux.com/photos/01/11/77/66/19398045/3/1200x0.jpg" class="banquet" width="230px" height="150x"><br>
-        <img src="https://www.iqmetrix.com/hubfs/Meme%2021.jpg" class="banquet2" width="230px" height="150x">
-        <img src="https://www.ctvnews.ca/polopoly_fs/1.5077772.1598319976!/httpImage/image.png_gen/derivatives/landscape_960/image.png" class="banquet2" width="230px" height="150x">
-        <img src="https://img.delicious.com.au/WqbvXLhs/del/2016/06/more-the-merrier-31380-2.jpg" class="banquet2" width="230px" height="150x"><br>
-        <img src="https://static.stacker.com/s3fs-public/styles/properly_sized_image/s3/2019-03/Screen%20Shot%202019-03-14%20at%2010.49.01%20AM_1.png" class="banquet2" width="230px" height="150x">
-        <img src="https://s.hdnux.com/photos/01/11/31/25/19240272/5/1200x0.jpg" class="banquet2" width="230px" height="150x">
-        <img src="https://www.journalism.co.uk/assets/132/meme-702x336.jpg" class="banquet2" width="230px" height="150x">
-      
-		<h4 id="verify"><a href="https://ok2.ryanxiang.repl.co" target="_blank" id="link1">Click to verify your identity</a><h4>
-
-        <div id="text">
-        <p id="info-banquet">memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> memes=life<br> </p>
-        </div>
-    
 
 
-    
+<h1 id="name">Ryan Xiang</h1>
+<div id="div1">
+<h3 id="contents">Contents</h3>
+<ul id="list1">
+  <li><a href="#info">Personal Information</a></li>
+  <li><a href="#goals">Goals</a></li>
+  <li><a href="#good">Achievements</a></li>
+  <li><a href="#fun">Hobbies</a></li>
+  <li><a href="#facts">Fun Facts</a></li>
+</div>
+</ul>
+
+<div id="div2">
+<h3 id="info" class="headers">Personal Information</h3>
+
+<p>INSERT INFO HERE</p>
 
 
+<h3 id="goals" class="headers">Goals</h3>
 
-		
-    </body>
+<p>INSERT SOME GOALS HERE -- MAYBE IN BULLET POINTS WITH PICS</p>
+
+
+<h3 id="good" class="headers">Achievements</h3>
+
+<p>If I have any....</p>
+
+
+<h3 id="fun" class="headers">Hobbies</h3>
+
+<p>SPORTS? READING?</p>
+
+
+<h3 id="facts" class="headers">Fun Facts</h3>
+
+<p>DO I HAVE ANY FUN FACTS?</p>
+</div>
+
+</body>
 </html>

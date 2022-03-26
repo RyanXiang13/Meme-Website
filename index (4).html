@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            #info-sidebar {
+				      font-size: 21px;  
+              color: red;
+			}
+			
+			.perks {
+				color: green;
+        font-size: 15px;
+			}
+			
+			#sidebar {
+				position: relative;
+        position: fixed;
+        left: 580px;
+				
+			}
+			
+      @keyframes title {
+        0% {color: red;}
+        20% {color: black;}
+        40% {color: green;}
+        60% {color: blue;}
+        80% {color: gray;}
+        100% {color: purple;}
+      }
+
+      #title {
+        background-color: yellow;
+        animation-name: title;
+        animation-duration: 3.5s;
+        animation-iteration-count: infinite;
+      }
+     
+div {
+        background-color: #0CB1C4;
+        animation-name: spin;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+        position: relative;
+        right: 50px;
+        width: 100px;
+        height: 100px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+      }
+
+@keyframes spin {
+      0%   {
+        transform:rotate(0deg);
+        }
+    25%  {
+        transform:rotate(45deg);
+        }
+    50%  {
+        transform:rotate(315deg);
+        }
+    75%  {
+        transform:rotate(360deg);
+        }
+    100%  {
+        transform:rotate(315deg);
+        }
+      }
+			
+
+
+
+        </style>
+    </head>
+    <body>
+        
+        <h1 id="title">ANNUAL ATHLETIC BANQUET</h1>
+        <h2>You Are Invited</h2>
+        
+        <div id="sidebar"><p id="info-sidebar">What there will be:</p>
+        <ul>
+            <li class="perks">Free drinks</li>
+			<li class="perks">Special singer</li>
+			<li class="perks">All you can eat</li>
+			<li class="perks">Dance</li>
+        </ul>
+        </div>
+		
+
+		
+    </body>
+</html>

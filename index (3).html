@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style> 
+    body { 
+        margin: 0; 
+        padding: 0; 
+        text-align: center;
+    } 
+  
+    div { 
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    } 
+  
+    h1 { 
+        font-size: 75px; 
+        font-family: serif; 
+        color: transparent;  
+        animation: effect 2s linear infinite; 
+        position: relative;
+        bottom: 120px;
+    } 
+  
+    @keyframes effect { 
+        0% { 
+            background: orange; 
+            -webkit-background-clip: text; 
+        } 
+        25% { 
+            background: red; 
+            -webkit-background-clip: text; 
+        } 
+        50% { 
+            background: yellow; 
+            -webkit-background-clip: text; 
+        } 
+        75% { 
+            background: blue; 
+            -webkit-background-clip: text; 
+        } 
+        100% { 
+            background: green; 
+            -webkit-background-clip: text; 
+        } 
+    } 
+
+h3 {
+        color: #0CB1C4;
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+        position: relative;
+        top: 15px;
+        padding-left: 15px;
+        padding-top: 5px;
+        font-size: 35px;
+      }
+
+    @keyframes spin {
+    0%   {
+        transform:rotate(0deg);
+        }
+    25%  {
+        transform:rotate(15deg);
+        }
+    50%  {
+        transform:rotate(0deg);
+        }
+    75%  {
+        transform:rotate(-15deg);
+        }
+    100%  {
+        transform:rotate(0deg);
+        }      
+      }
+</style> 
+  </head>
+  <body>
+    <div>
+    <h1>CONGRATULATIONS!</h1>
+    <h1>YOU HAVE BEEN VERIFIED!</h1>
+    <h3>We have entered your name on our attendance list!</h3>
+    </div>
+
+
+  </body>
+</html>
